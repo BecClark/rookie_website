@@ -2,13 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Rookie By The Academy Brand</title>
+<title>Rookie By The Academy Brand</title>
 
 <!-- Reset Browser - Normalise Stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
 <!-- This allows the browser to remember the screensize -->
-    <meta name= "viewport" content="width=device-width, initial-scale=1">
+<meta name= "viewport" content="width=device-width, initial-scale=1">
 
 <!-- Icon font library TODO -->
 
@@ -16,15 +16,18 @@
 <!-- Google Fonts  -->
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400|Quicksand:300,400" rel="stylesheet">
 
+<!-- This is Gridlex -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.4/gridlex.min.css">
+
 <!-- Link to CSS Stylesheet -->
-    <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main.css">
 
   </head>
   <body>
 
+<section class="top-banner">
 <!-- Site header -->
 
-<section class="top-banner">
   <header>
 <!-- Logo and nav -->
     <div>
@@ -32,17 +35,17 @@
     </div>
     <div>
         <nav>
-            <a href="lookbook.html"> Look Book </a>
+            <a href="lookbook.html"> Lookbook </a>
+            <a href="rookiediaries.html"> Rookie Diaries </a>
             <a href="stores.html"> Stores </a>
-            <a href="rookiediaries.html">Rookie Diaries</a>
         </nav>
     </div>
 <!-- Logo and nav close -->
   </header>
-</section>
 
 <!-- Site header close -->
 
+</section>
 
 <!-- Site main content -->
     <div class="main">
@@ -60,47 +63,82 @@
 
 <section>
 <!-- Lookbook -->
-<h1> Lookbook </h>
-  <h2> View lookbook </h2>
 
-  <div>
-    <!-- Rookie stripe -->
+<h2> View Lookbook </h2>
+
+<div class="grid">
+
+  <div class="col-6_md-6_sm-12">
+    <img src="images/store_image.jpg">
   </div>
+  <div class="col-4_md-6_sm-12">
+    <img src="images/store_image.jpg">
+  </div>
+  <div class="col-4_md-6_sm-12">
+    <img src="images/store_image.jpg">
+  </div>
+</div>
 </section>
 
 <section>
 <!-- Blog Section -->
-<h1> The Rookie Diaries </h>
-  <h2> What we love </h2>
+<h2> The Rookie Diaries </h2>
 
-  <div>
-    <!-- Rookie stripe -->
+<div class="grid">
+
+  <div class="col-4_md-6_sm-12">
+    <p> Image </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
   </div>
+  <div class="col-4_md-6_sm-12">
+    <p> Image </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+  </div>
+  <div class="col-4_md-6_sm-12">
+    <p> Image </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+  </div>
+</div>
+
 </section>
 
 <section>
 <!-- Instagram Feed -->
-<h1> @rookiebyacademy </h>
-
+<h2> @rookiebyacademy </h2>
+<!-- InstaWidget -->
+<a href="https://instawidget.net/v/user/rookiebyacademy" id="link-a43e93fd92001d61d3265047479b03ef8acfdff1eff32858044074c4b18013df">@rookiebyacademy</a>
+<script src="https://instawidget.net/js/instawidget.js?u=a43e93fd92001d61d3265047479b03ef8acfdff1eff32858044074c4b18013df&width=1300px"></script>
   <div>
     <!-- Rookie stripe -->
   </div>
 </section>
 
 <section>
-<!-- Stores -->
-  <div>
+<!-- Store Location -->
 
+    <h2 class="col-12"> Store Locations </h2>
 
-  </div>
-    <h1> Stores </h1>
-      <p> Available across 7 retail stores in Sydney and our partners David Jones</p>
-      <p>list of stores</p>
-  </div>
-  <div>
-    <!-- Rookie stripe -->
-  </div>
+    <div class="grid">
+
+      <div class="col-4_md-6_sm-12">
+        <p> Rookie is available across 7 retail stores in Sydney and via our partners David Jones.</p>
+        <img src="images/flag.jpg">
+        <ul>
+          <li> Bondi Junction</li>
+          <li> Bondi Beach</li>
+          <li> Warringah Mall</li>
+          <li> Paddington</li>
+          <li> Chatswood</li>
+          <li> Miranda</li>
+        </ul>
+      </div>
+      <div class="col-8_md-6_sm-12">
+        <img src="images/store_image.jpg">
+      </div>
+
+    </div>
 </section>
+
 
 <!-- Main Content Close -->
 
