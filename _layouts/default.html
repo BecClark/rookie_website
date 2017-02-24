@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+
+<!-- Reset Browser - Normalise Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<!-- This allows the browser to remember the screensize -->
+    <meta name= "viewport" content="width=device-width, initial-scale=1">
+
+<!-- Icon font library TODO -->
+
+
+<!-- Google Fonts  -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400|Quicksand:300,400" rel="stylesheet">
+
+<!-- Link to CSS Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+
+{% include header.html %}
+
+<!-- Site main content -->
+    <div class="main">
+    {{content}}
+    </div>
+<!-- Site main content close -->
+
+{% include footer.html %}
+
+  </body>
+</html>

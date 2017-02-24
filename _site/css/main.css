@@ -1,0 +1,70 @@
+/* Another reset style */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* Universal Styles */
+
+a {
+    text-decoration: none;
+    color: #002d56;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    position: fixed;
+}
+
+body {
+    color: #002d56;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 200;
+}
+
+
+/*-- Header --*/
+
+header {
+    padding: 50px;
+}
+
+.top-banner {
+    background-image: url("/images/rookiehomepage_v2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.top-bannner
+/*-- Main Content --*/
+
+.introduction {
+    text-align: center;
+    margin: 10%;
+}
+
+.main {
+    padding: 50px;
+}
+
+h1 {
+    font-size: 1.17em;
+}
+
+footer {
+    padding: 50px;
+    background-color: #e7e1d5;
+}
