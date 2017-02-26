@@ -35,14 +35,14 @@ body {
 header {
     height: 168px;
     padding: 0 1.5em;
-    display: flex;
-    justify-content: space-between;
     position: fixed;
     width: 100%;
+    transition: all 0.3s ease;
 }
 
 header a {
     line-height: 168px;
+    transition: all 0.3s ease;
 }
 
 .navigation a {
@@ -53,6 +53,7 @@ header a {
 header img {
     height: 72px;
     width: 198px;
+    transition: all 0.3s ease;
 }
 
 .logo {
@@ -67,23 +68,121 @@ header img {
     min-height: 100vh;
 }
 
+.down-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 50px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -20px;
+    text-align: center;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.down-arrow:hover {
+    bottom: 45px;
+    opacity: 1;
+}
+
+header .navigation {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*-- Mobile nav toggle --*/
+
+.nav-button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width: 50em) {
+    nav {
+        position: relative;
+    }
+    .nav-button {
+        display: block;
+    }
+    header .navigation {
+        display: none;
+    }
+    .navigation a {
+        display: block;
+    }
+    .mobile-nav-active .navigation {
+        display: block;
+        width: 100%;
+        text-align: right;
+        position: absolute;
+        top: 60px;
+        right: 0;
+    }
+}
+
+
+/* Header styles when scrolled */
+
+header.scrolled {
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+}
+
+header.scrolled a {
+    line-height: 60px;
+}
+
+header.scrolled img {
+    height: 47px;
+    width: 130px;
+}
+
+.scrolled .logo {
+    padding: 0.35em 1em;
+}
+
 
 /*-- Main Content --*/
 
+.max-width {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 .introduction {
+    margin: 0 auto;
+}
+
+.introduction h1 {
     text-align: center;
     margin: 1%;
 }
 
+.introduction p {
+    text-align: center;
+    margin: auto 20%;
+}
+
 .line-separator {
     height: 1px;
-    background: #002d56;
-    width: 70%;
-    margin: 4px auto;
+    background: #a5a5a5;
+    width: 50%;
+    margin: 50px auto;
 }
 
 .main {
-    padding: 50px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 h1 {
@@ -96,6 +195,13 @@ h2 {
     font-size: 1.15;
 }
 
+h1, h2 {
+    background-image: url(../images/flag_1.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+}
+
 .boxed {
     background-color: #e7e1d5;
     padding-top: 1.3%;
@@ -104,6 +210,14 @@ h2 {
     padding-left: 2.8%;
     text-align: center;
     font-weight: 400;
+    display: inline-block;
+}
+
+.grid-center {
+    text-align: center;
+}
+
+.grid-center img {
     display: inline-block;
 }
 
@@ -118,14 +232,40 @@ h2 {
     display: block;
 }
 
-.category img {
-    display: block;
-}
-
 .category-block {
     max-width: 1024px;
-    margin: -7% auto 0;
-    padding: 100px;
+    margin: -4% auto 0;
+    padding-top: 12%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+
+/*-- Rookie Diaries --*/
+
+.column {
+    padding: 30px;
+}
+
+.diaries {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.diaries a {
+    color: #b5121b;
+    font-weight: 400;
+}
+
+.diaries p {
+    padding-top: 2px;
+}
+
+.diaries h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 
@@ -136,28 +276,61 @@ h2 {
 }
 
 
+/*
+.instagram-widget {
+    position: relative;
+    height: 522px;
+}
+
+.instagram-widget iframe {
+    position: absolute;
+    left: 0;
+    height: 100%;
+}*/
+
+.instagram-widget iframe {
+    margin: 0 auto!important;
+    display: block;
+}
+
+
 /*-- Stores --*/
 
 .stores {
     text-align: center;
-    max-width: 120%;
-    margin: 0% auto;
+    max-width: 950px;
+    margin: 0 auto;
 }
 
-.featuredpara p {
-    text-align: right;
+.featuredpara {
+    padding-right: 50px;
 }
 
 .featuredpara ul {
-    padding-left: 5em;
-    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.featuredpara .boxed {
+    margin-top: 20px;
+}
+
+.grid a {
+    font-weight: 400;
+}
+
+@media (max-width: 48em) {
+    .featuredpara {
+        padding-left: 50px;
+    }
 }
 
 
 /*-- This is the footer --*/
 
 footer {
-    padding: 10vh 9vw;
+    padding: 5vh 9vw;
     background-color: #e7e1d5;
     background-size: 40vh;
     font-weight: 400;
@@ -170,6 +343,10 @@ footer a {
 
 footer li {
     list-style-type: none;
+}
+
+footer nav {
+    justify-content: flex-start;
 }
 
 
@@ -196,4 +373,41 @@ footer li {
 
 .flatlay {
     padding-top: -20px;
+}
+
+@media(max-width: 480px) {
+    .flatlay img {
+        display: none;
+    }
+}
+
+
+/*-- Stores Page --*/
+
+.stores-page {
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    margin: 3%;
+}
+
+
+/*-- Rookie Diaries Page --*/
+
+
+/*.rookie-diaries p {
+    padding-top: 2px;
+}*/
+
+.rookie-diaries h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.rookie-diaries {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text {
+    padding: 30px;
 }

@@ -12,7 +12,7 @@
 
 <!-- Icon font library TODO -->
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <!-- Google Fonts  -->
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400|Quicksand:300,400" rel="stylesheet">
 
@@ -24,38 +24,42 @@
 <link rel="stylesheet" href="css/main.css">
 
   </head>
-  <body>
+  <body class="home">
 
 <section class="top-banner">
-<!-- Site header -->
+  <!-- Site header -->
 
-  <header>
-<!-- Logo and nav -->
+<header>
+
+  <nav>
     <div class="logo">
-      <img src="Images/Rookie_Logo_Colour_Online.png">
+      <a href="/index.html">
+      <img src="Images/Rookie_Logo_Colour_Online.png" alt="Rookie Logo"></a>
     </div>
-    <div class="navigation">
-        <nav>
-            <a href="lookbook.html"> Lookbook </a>
-            <a href="rookiediaries.html"> Rookie Diaries </a>
-            <a href="stores.html"> Stores </a>
-        </nav>
+    <div class="navigation list-unstyled">
+      <a href="lookbook.html"> Lookbook </a>
+      <a href="rookie-diaries.html"> Rookie Diaries </a>
+      <a href="stores.html"> Stores </a>
     </div>
-<!-- Logo and nav close -->
-  </header>
+    <button class="nav-button" type="button"
+    name="button">=</button>
+  </nav>
+
+</header>
 
 <!-- Site header close -->
 
+  <a href="#main" class="down-arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
 </section>
 
 <!-- Site main content -->
-    <div class="main">
+    <div class="main" id="main">
     <!-- Main Content -->
 
-<section>
+<section class="grid">
 <!-- Intro Text -->
 
-  <div class="introduction">
+  <div class="col-12 introduction">
     <h1>Introducing Rookie By The Academy Brand</h1>
       <p>Introducing the debut season of Rookie by The Academy Brand. Rookie delivers everything you know and love from The Academy Brand, just smaller! Dressing boys from age 2-7, the summer 16/17 collection has your little Rookie looking sharp this season!</p>
       <div class="line-separator"></div>
@@ -66,49 +70,70 @@
 <section>
 <!-- Lookbook -->
 
-<h2> Lookbook </h2>
-
-<div class="grid category-block">
+<div class="grid-center category-block">
 
   <div class="col-6_md-6_sm-12 category">
-    <img src="images/mood1.jpg">
+    <a href="/lookbook.html">
+    <img src="images/mood1.jpg"></a>
   </div>
 
   <div class="col-6_md-6_sm-12 category">
-    <img src="images/boardies.jpg">
-    <div class="boxed">View Lookbook</div>
+    <a href="/lookbook.html">
+    <img src="images/mood2.jpg"></a>
   </div>
 
   <div class="col-6_md-6_sm-12 category">
-    <img src="images/mood3.jpg">
+    <a href="/lookbook.html">
+    <img src="images/mood3.jpg"></a>
   </div>
 
   <div class="col-6_md-6_sm-12 category">
-    <img src="images/mood4.jpg">
+    <a href="/lookbook.html">
+    <img src="images/mood4.jpg"></a>
   </div>
-</div>
+      <div class="boxed">
+        <a href="/lookbook.html"> View Lookbook</a>
+      </div>
+  </div>
 </section>
-    <div class="line-separator"></div>
 
-<section>
+
+<section class="max-width">
 <!-- Blog Section -->
 <h2> The Rookie Diaries </h2>
 
-<div class="grid">
+<div class="grid-center">
 
   <div class="col-4_md-6_sm-12">
-    <img src="images/rookieacademy.jpg">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+      <a href="/rookie-diaries.html">
+        <img src="images/director.jpg"></a>
+    <div class="diaries">
+      <h3>Where It All Started</h3>
+      <p> The Academy Brand, father to Rookie was born in 2007 and has become one of the leaders in the Australian fashion industry. How did Anthony Pitt do it?</p>
+      <p> <a href="rookie-diaries.html"> Read More > </a></a></p>
+    </div>
   </div>
+
   <div class="col-4_md-6_sm-12">
-    <img src="images/rookiesand.jpg">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+      <a href="/rookie-diaries.html">
+        <img src="images/designs.jpg"></a>
+    <div class="diaries">
+      <h3>Rookie Designs</h3>
+      <p>All our Rookie designs and prints are crafted from premium fabrics and designed by our in house team. Find out what we prioritise when designing each piece.</p>
+      <p> <a href="rookie-diaries.html"> Read More > </a></p>
+    </div>
   </div>
+
   <div class="col-4_md-6_sm-12">
-    <img src="images/rookieheritage.jpg">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+      <a href="/rookie-diaries.html">
+        <img src="images/father.jpg"></a>
+    <div class="diaries">
+      <h3> For The Men & Now The Boys</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur.</p>
+      <p> <a href="rookie-diaries.html"> Read More > </a></p>
+    </div>
   </div>
-</div>
+
 
 </section>
 
@@ -118,22 +143,21 @@
     <h2> Follow Us </h2>
     <p> @RookieByAcademy </p>
   </div>
-<!-- InstaWidget -->
-<div>
-<a href="https://instawidget.net/v/user/rookiebyacademy" id="link-a43e93fd92001d61d3265047479b03ef8acfdff1eff32858044074c4b18013df">@rookiebyacademy</a>
-<script src="https://instawidget.net/js/instawidget.js?u=a43e93fd92001d61d3265047479b03ef8acfdff1eff32858044074c4b18013df&width=1300px"></script>
-  </div>
-</section>
+
+<div class="instagram-widget">
+  <!-- InstaWidget -->
+  <a href="https://instagram.com/rookiebyacademy" id="link-48d72556009a4c30d3c53c21819ac78322812f928a89e6ad50507e077abe923f">@rookiebyacademy</a>
+  <script src="https://instawidget.net/js/instawidget.js?u=48d72556009a4c30d3c53c21819ac78322812f928a89e6ad50507e077abe923f&width=1300px"></script>
+</div>
 
 <section class="stores">
 <!-- Store Location -->
+    <h2> Store Locations </h2>
 
-    <h2 class="col-12"> Store Locations </h2>
+    <div class="grid-center">
 
-    <div class="grid">
-
-      <div class="col-4_md-6_sm-12 featuredpara">
-        <p> Rookie is available across 7 retail stores in Sydney and via our partners David Jones.</p>
+      <div class="col-6_md-6_sm-12 featuredpara">
+        <p> Rookie is available online & featured in 7 retail stores across Sydney. You can also find us in all David Jones stores around Australia.</p>
         <ul>
           <li> Bondi Junction</li>
           <li> Bondi Beach</li>
@@ -142,9 +166,11 @@
           <li> Chatswood</li>
           <li> Miranda</li>
         </ul>
-      <div class="boxed"> Shop Rookie Online</div>
+        <div class="boxed">
+          <a href="http://academybrand.com/rookie/rookie-clothing/rookie-shop-all.html"> Shop Rookie Online</a>
       </div>
-      <div class="col-8_md-6_sm-12 featuredimage">
+    </div>
+      <div class="col-6_md-6_sm-12 featuredimage">
         <img src="images/warringah_store.jpg">
       </div>
 
@@ -159,12 +185,19 @@
 
 <!-- Site footer -->
     <footer>
+
       <div>
           <nav>
             <ul>
-              <li a href="lookbook.html"> Look Book </a></li>
-              <li a href="stores.html"> Stores </a></li>
-              <li a href="rookiediaries.html"> Rookie Diaries</a></li>
+              <li><a href="mailto:customercare@academybrand.com"> Contact Us</a></li>
+              <li><a href="https://academybrand.com/shipping.html"> Shipping Information</a></li>
+              <li><a href="https://academybrand.com/rookie/rookie-clothing/rookie-shop-all.html"> Shop Online @ The Academy</a></li>
+            </ul>
+            <ul>
+              <li> Follow Us @ </li>
+              <li><a href="https://www.instagram.com/rookiebyacademy"> Instagram </a></li>
+              <li><a href="https://web.facebook.com/rookiebyacademy"> Facebook </a></li>
+              <li><a href="https://www.pinterest.com/theacademybrand/"> Pinterest </a></li>
             </ul>
           </nav>
       </div>
@@ -172,7 +205,7 @@
 <!-- Site footer close -->
 
 <script type="text/javascript"
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 <script type="text/javascript" src="scripts/main.js"></script>
 

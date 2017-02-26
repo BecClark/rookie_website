@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<section class="stores-page">
+
+  <h1> Store Locations </h1>
+
+  {% for store in site.stores %}
+    <div class="grid">
+        <div class="col-6">
+            {{ store.map }}
+        </div>
+        <div class="col-6">
+            <h3>{{ store.name }}</h3>
+            <p>{{ store.content }}</p>
+            <img src="{{ store.image }}">
+        </div>
+    </div>
+  {% endfor %}
+
+</section>

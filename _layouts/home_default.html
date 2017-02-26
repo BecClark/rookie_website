@@ -3,14 +3,15 @@
   <head>
     {% include head.html %}
   </head>
-  <body>
+  <body class="home">
 
 <section class="top-banner">
-{% include header.html %}
+  {% include header.html %}
+  <a href="#main" class="down-arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
 </section>
 
 <!-- Site main content -->
-    <div class="main">
+    <div class="main" id="main">
     {{content}}
     </div>
 <!-- Site main content close -->
