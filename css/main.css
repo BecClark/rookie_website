@@ -363,6 +363,10 @@ footer nav {
     margin: 5% auto;
 }
 
+.lookbook p {
+    font-size: 1.1rem;
+}
+
 .lookbook a {
     font-weight: 400;
 }
